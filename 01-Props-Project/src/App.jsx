@@ -108,9 +108,11 @@ console.log(jobOpening);
 
   return (
     <div className='parent'>
-     {jobOpening.map(function(ele){
+     {jobOpening.map(function(ele,idx){
        
-       return <Card company={ele.companyName} post={ele.post} tag1={ele.tag1} tag2={ele.tag2} pay={ele.pay} brandLogo={ele.brandLogo} date={ele.date}/>
+       return <div key={idx}>
+            <Card  company={ele.companyName} post={ele.post} tag1={ele.tag1} tag2={ele.tag2} pay={ele.pay} brandLogo={ele.brandLogo} date={ele.date}/>
+       </div>
      })}
     </div>
   )
