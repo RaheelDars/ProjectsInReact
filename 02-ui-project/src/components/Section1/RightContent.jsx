@@ -1,11 +1,10 @@
 import React from 'react'
-import { MoveUpRight } from 'lucide-react'
+
 
 const RightContent = () => {
   return (
-    <div className='h-full w-3/4 bg-blue-600'>
-        <div></div>
-        <div><MoveUpRight /></div>
+    <div className='h-full w-2/3 bg-blue-200'>
+        
     </div>
   )
 }
