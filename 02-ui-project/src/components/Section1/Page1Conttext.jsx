@@ -2,11 +2,11 @@ import React from 'react'
 import LeftContent from './LeftContent'
 import RightContent from './RightContent'
 
-function Page1Conttext() {
+function Page1Conttext(props) {
   return (
-    <div className='py-10 flex items-center gap-10  h-[90vh] px-18 '>
+    <div className='pb-16 pt-6 flex items-center gap-10  h-[90vh] px-18 '>
         <LeftContent/>
-        <RightContent/>
+        <RightContent users={props.users}/>
     </div>
   )
 }
